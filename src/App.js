@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
 
+function Title() {
+    return <h2> HOME WORK 1</h2>;
+}
+
+function Text() {
+    return <p> Aruuke 43-01</p>;
+}
+
+function Header() {
+    return (
+            <Title/>
+    );
+}
+
+function Content() {
+    return (
+        <>
+            <Title/>
+            <Text/>
+        </>
+    );
+}
+
+function Footer() {
+    return <Title/>;
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header />
+            <Content />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
+
